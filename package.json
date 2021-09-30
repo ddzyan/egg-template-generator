@@ -14,6 +14,9 @@
     "onCommand:egg-template-generator.helloWorld"
   ],
   "main": "./extension.js",
+  "repository": {
+    "url": "https://github.com/ddzyan/egg-template-generator.git"
+  },
   "contributes": {
     "commands": [
       {
