@@ -28,6 +28,7 @@
   },
   "scripts": {
     "lint": "eslint .",
+    "pub": "vsce publish patch",
     "pretest": "npm run lint",
     "test": "node ./test/runTest.js"
   },
