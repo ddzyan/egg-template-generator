@@ -7,6 +7,7 @@ const vscode = require('vscode');
 
 /**
  * @param {vscode.ExtensionContext} context
+ * 注册的激活事件被触发之时执行
  */
 function activate(context) {
 
@@ -21,13 +22,13 @@ function activate(context) {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from egg-template-generator!');
+		vscode.window.showInformationMessage('Hello VS World from egg-template-generator!');
 	});
 
 	context.subscriptions.push(disposable);
 }
 
-// this method is called when your extension is deactivated
+// 插件关闭前执行清理工作的机会
 function deactivate() {}
 
 module.exports = {
