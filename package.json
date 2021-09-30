@@ -10,18 +10,19 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:egg-template-generator.helloWorld"
-  ],
   "main": "./extension.js",
   "repository": {
+    "type": "git",
     "url": "https://github.com/ddzyan/egg-template-generator.git"
   },
+  "activationEvents": [
+    "onCommand:extension.generatorEggTemplate"
+  ],
   "contributes": {
     "commands": [
       {
-        "command": "egg-template-generator.helloWorld",
-        "title": "Hello World"
+        "command": "extension.generatorEggTemplate",
+        "title": "generatorEggTemplate"
       }
     ]
   },
@@ -31,14 +32,18 @@
     "test": "node ./test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.60.0",
     "@types/glob": "^7.1.4",
     "@types/mocha": "^9.0.0",
     "@types/node": "14.x",
+    "@types/vscode": "^1.60.0",
+    "@vscode/test-electron": "^1.6.2",
     "eslint": "^7.32.0",
     "glob": "^7.1.7",
     "mocha": "^9.1.1",
-    "typescript": "^4.4.3",
-    "@vscode/test-electron": "^1.6.2"
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
