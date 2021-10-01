@@ -2,7 +2,7 @@
   "name": "egg-template-generator",
   "displayName": "egg-template-generator",
   "description": "a egg template generator",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "ddzyan",
   "engines": {
     "vscode": "^1.60.0"
