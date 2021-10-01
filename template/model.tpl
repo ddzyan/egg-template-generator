@@ -25,7 +25,7 @@ module.exports = app => {
   <%= className %>.init(<%= schemaName %>Schema, {
     sequelize: app.model,
     tableName: '<%= fileName %>',
-    comment: '<%= fileName %>',
+    comment: '<%= comment %>',
   });
 
   return <%= className %>;
