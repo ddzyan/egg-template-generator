@@ -5,7 +5,10 @@ module.exports = app => {
   const <%= schemaName %>Schema = require('../schema/<%= fileName %>')(app);
 
   class <%= className %> extends Model {
-    static async saveNew(params, { transaction }) {}
+    static async saveNew(params, options) {
+       const res = await <%= className %>.create(params, options);
+      return res;
+    }
 
     static async getCount(params) {}
 
