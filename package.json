@@ -4,6 +4,7 @@
   "description": "a egg template generator",
   "version": "0.0.8",
   "publisher": "ddzyan",
+  "icon": "./icon.jpg",
   "engines": {
     "vscode": "^1.60.0"
   },
