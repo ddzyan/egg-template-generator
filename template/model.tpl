@@ -1,24 +1,47 @@
 'use strict';
 
 module.exports = app => {
+  const { Sequelize, checkUpdate, checkDelete } = app;
+  const { Op } = Sequelize;
+
   const { Model } = app.Sequelize;
   const <%= schemaName %>Schema = require('../schema/<%= fileName %>')(app);
 
   class <%= className %> extends Model {
-    static async saveNew(params, options) {
-       const res = await <%= className %>.create(params, options);
+    static async saveNew(param, options) {
+      const res = await <%= className %>.create(param, { ...options });
       return res;
     }
 
-    static async getCount(params) {}
+    static async getCount(param) {
+      const count = await <%= className %>.count({
+        where: param,
+      });
 
-    static async getDetail(params, options, logging = false) {
-      const res = await <%= className %>.findOne({
-        where: {
-          params,
-        },
+      return count;
+    }
+
+    static async saveModify(newParam, param, options) {
+      const result = await <%= className %>.update(newParam, {
+        where: param,
         ...options,
-        logging,
+      });
+      checkUpdate(result);
+      return result;
+    }
+
+    static async remove(param, options) {
+      const result = await <%= className %>.destroy({ where: param, ...options });
+
+      checkDelete(result);
+
+      return uuid;
+    }
+
+    static async getDetail(param, options) {
+      const res = await <%= className %>.findOne({
+        where: param,
+        ...options,
       });
 
       return res;
@@ -31,5 +54,5 @@ module.exports = app => {
     comment: '<%= comment %>',
   });
 
-  return <%= className %>;
+  return  <%= className %>;
 };
