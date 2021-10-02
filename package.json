@@ -2,7 +2,7 @@
   "name": "egg-template-generator",
   "displayName": "egg-template-generator",
   "description": "a egg template generator",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "publisher": "ddzyan",
   "icon": "img/icon.png",
   "engines": {
