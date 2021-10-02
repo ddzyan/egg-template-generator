@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = app => {
-  const { execSql, checkUpdate, checkDelete } = app;
+  const { Sequelize, execSql, checkUpdate, checkDelete } = app;
   const { Op } = Sequelize;
 
   const { Model } = app.Sequelize;
@@ -47,15 +47,6 @@ module.exports = app => {
       checkDelete(result);
 
       return result;
-    }
-
-    static async getDetail(param, options) {
-      const res = await execSql(this.findOne({
-        where: param,
-        ...options,
-      }));
-
-      return res;
     }
 
     static async getDetail(param, options) {
