@@ -5,7 +5,7 @@
 - [x] model 模板
 - [ ] schema 模板
 - [x] controller 模板
-- [ ] service 模板
+- [x] service 模板
       ...
 
 ## 使用
