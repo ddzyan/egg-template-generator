@@ -2,9 +2,8 @@
 
 module.exports = app => {
   const { Sequelize, execSql, checkUpdate, checkDelete } = app;
-  const { Op } = Sequelize;
+  const { Op , Model} = Sequelize;
 
-  const { Model } = app.Sequelize;
   const <%= schemaName %>Schema = require('../schema/<%= fileName %>')(app);
 
   class <%= className %> extends Model {

@@ -2,7 +2,7 @@
   "name": "egg-template-generator",
   "displayName": "egg-template-generator",
   "description": "a egg template generator",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "publisher": "ddzyan",
   "icon": "img/icon.png",
   "engines": {
@@ -12,10 +12,6 @@
     "Other"
   ],
   "main": "./extension.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ddzyan/egg-template-generator.git"
-  },
   "activationEvents": [
     "onCommand:extension.generatorEggTemplate"
   ],
