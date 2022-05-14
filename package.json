@@ -2,7 +2,7 @@
   "name": "dc-template-generator",
   "displayName": "dc-template-generator",
   "description": "template generator",
-  "version": "0.1.10",
+  "version": "1.0.0",
   "publisher": "ddzyan",
   "icon": "img/icon.png",
   "engines": {
@@ -18,8 +18,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.generatorEggTemplate",
-        "title": "generatorEggTemplate"
+        "command": "extension.generatorTemplate",
+        "title": "generatorTemplate"
       }
     ]
   },
