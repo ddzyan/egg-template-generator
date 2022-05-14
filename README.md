@@ -6,8 +6,9 @@
 - [ ] schema 模板
 - [x] controller 模板
 - [x] service 模板
+- [x] mapping 模板
       ...
 
 ## 使用
 
-插件市场搜索 egg-template-generator 并且安装 ，shift + control + P 输入 generatorEggTemplate ，根据交互完成 模板文件创建
+插件市场搜索 dc-template-generator 并且安装 ，shift + control + P 输入 generatorTemplate ，根据交互完成 模板文件创建

@@ -6,7 +6,7 @@ const Generator = require("./lib/generator");
  */
 function activate(context) {
   let disposable = vscode.commands.registerCommand(
-    "extension.generatorEggTemplate",
+    "extension.generatorTemplate",
     function () {
       const generator = new Generator();
       generator.create();

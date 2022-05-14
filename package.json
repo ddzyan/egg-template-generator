@@ -1,8 +1,8 @@
 {
-  "name": "egg-template-generator",
-  "displayName": "egg-template-generator",
-  "description": "a egg template generator",
-  "version": "0.1.8",
+  "name": "dc-template-generator",
+  "displayName": "dc-template-generator",
+  "description": "template generator",
+  "version": "0.1.9",
   "publisher": "ddzyan",
   "icon": "img/icon.png",
   "engines": {
