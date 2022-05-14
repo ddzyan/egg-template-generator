@@ -4,7 +4,7 @@
   "description": "template generator",
   "version": "1.0.1",
   "publisher": "ddzyan",
-  "icon": "img/icon.png",
+  "icon": "img/icon.jpg",
   "engines": {
     "vscode": "^1.60.0"
   },
